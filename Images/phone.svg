@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="74"
+     height="74"
+     viewBox="0 0 64 64"
+     fill="none">
+
+  <defs>
+
+    <!-- Same Purple Gradient -->
+    <linearGradient id="phoneGradient"
+      x1="10" y1="5" x2="54" y2="60">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="45%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <!-- Dark Phone Screen -->
+    <linearGradient id="screenGradient"
+      x1="20" y1="12" x2="44" y2="52">
+      <stop offset="0%" stop-color="#1C163A"/>
+      <stop offset="100%" stop-color="#08051A"/>
+    </linearGradient>
+
+    <!-- Neon Glow -->
+    <filter id="phoneGlow"
+      x="-50%" y="-50%"
+      width="200%"
+      height="200%">
+
+      <feDropShadow
+        dx="0"
+        dy="0"
+        stdDeviation="2.8"
+        flood-color="#A855F7"
+        flood-opacity=".75"/>
+
+      <feDropShadow
+        dx="0"
+        dy="0"
+        stdDeviation="6"
+        flood-color="#7C3AED"
+        flood-opacity=".25"/>
+
+    </filter>
+
+  </defs>
+
+  <!-- Phone -->
+  <g filter="url(#phoneGlow)">
+
+    <!-- Outer Phone -->
+    <rect
+      x="18"
+      y="5"
+      width="28"
+      height="54"
+      rx="6"
+      fill="url(#screenGradient)"
+      stroke="url(#phoneGradient)"
+      stroke-width="2.2"/>
+
+    <!-- Screen -->
+    <rect
+      x="22"
+      y="11"
+      width="20"
+      height="38"
+      rx="2.5"
+      fill="#0B0920"
+      stroke="#A855F7"
+      stroke-width="1"
+      opacity=".9"/>
+
+    <!-- Speaker -->
+    <rect
+      x="28"
+      y="8"
+      width="8"
+      height="1.5"
+      rx=".75"
+      fill="#C084FC"/>
+
+    <!-- Home Indicator -->
+    <rect
+      x="28"
+      y="52"
+      width="8"
+      height="2"
+      rx="1"
+      fill="#A855F7"/>
+
+    <!-- Screen Glow -->
+    <circle
+      cx="32"
+      cy="30"
+      r="6"
+      fill="#7C3AED"
+      opacity=".08"/>
+
+  </g>
+
+</svg>
