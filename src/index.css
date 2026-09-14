@@ -1,0 +1,40 @@
+  .grey {
+      font-size: 15px
+  }
+.red{
+    color: red;
+    font-family: Poppins;
+}
+  .white {
+      color: rgba(255, 255, 255, 0.849);
+      margin-top: 15px;
+      font-size: 1.2rem;
+      font-family: Poppins;
+      margin-bottom: 10px;
+      font-weight: 500;
+  }
+
+  .gray {
+      color: gray;
+      font-family: Poppins;
+      font-size: 1.2rem;
+  }
+
+  .purple {
+      color: rgb(170, 107, 228);
+      font-family: Poppins;
+
+  }
+   .h2{
+    font-size: 2.5rem;
+     font-family: Poppins;
+     padding: 15px;
+     color: white;
+     margin-bottom: 10px;
+   }
+   .p{
+    font-size: 1.2rem;
+     font-family: Poppins;
+     color: rgba(255, 255, 255, 0.849);
+     margin-bottom: 10px;
+   }

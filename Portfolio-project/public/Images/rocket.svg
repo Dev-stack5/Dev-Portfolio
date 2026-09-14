@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="74"
+     height="74"
+     viewBox="0 0 64 64"
+     fill="none">
+
+  <defs>
+    <linearGradient id="rocketGradient"
+      x1="10" y1="8" x2="54" y2="58">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="45%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <linearGradient id="rocketBody"
+      x1="25" y1="10" x2="40" y2="50">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#DCD6FF"/>
+    </linearGradient>
+
+    <filter id="rocketGlow"
+      x="-50%" y="-50%"
+      width="200%" height="200%">
+
+      <feDropShadow
+        dx="0"
+        dy="0"
+        stdDeviation="2.8"
+        flood-color="#A855F7"
+        flood-opacity=".8"/>
+
+      <feDropShadow
+        dx="0"
+        dy="0"
+        stdDeviation="6"
+        flood-color="#7C3AED"
+        flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#rocketGlow)">
+
+    <!-- Rocket Body -->
+    <path
+      d="M32 7
+         C24 13 20 22 20 32
+         C20 39 24 46 32 51
+         C40 46 44 39 44 32
+         C44 22 40 13 32 7Z"
+      fill="url(#rocketBody)"
+      stroke="url(#rocketGradient)"
+      stroke-width="2.2"/>
+
+    <!-- Nose -->
+    <path
+      d="M32 7
+         C28 10 25 14 23 18
+         H41
+         C39 14 36 10 32 7Z"
+      fill="#F3EEFF"/>
+
+    <!-- Window -->
+    <circle
+      cx="32"
+      cy="25"
+      r="5"
+      fill="#17102F"
+      stroke="#A855F7"
+      stroke-width="2"/>
+
+    <circle
+      cx="32"
+      cy="25"
+      r="2"
+      fill="#C084FC"/>
+
+    <!-- Left Fin -->
+    <path
+      d="M21 34
+         L13 40
+         L17 47
+         L25 42"
+      fill="url(#rocketGradient)"
+      stroke="#A855F7"
+      stroke-width="2"
+      stroke-linejoin="round"/>
+
+    <!-- Right Fin -->
+    <path
+      d="M43 34
+         L51 40
+         L47 47
+         L39 42"
+      fill="url(#rocketGradient)"
+      stroke="#A855F7"
+      stroke-width="2"
+      stroke-linejoin="round"/>
+
+    <!-- Flame -->
+    <path
+      d="M27 48
+         C27 54 29 58 32 61
+         C35 58 37 54 37 48
+         L32 51
+         Z"
+      fill="url(#rocketGradient)"
+      stroke="#C084FC"
+      stroke-width="1.5"/>
+
+    <!-- Inner Flame -->
+    <path
+      d="M30 51
+         C30 55 31 57 32 58
+         C33 57 34 55 34 51
+         L32 53
+         Z"
+      fill="#FFFFFF"/>
+
+  </g>
+
+</svg>

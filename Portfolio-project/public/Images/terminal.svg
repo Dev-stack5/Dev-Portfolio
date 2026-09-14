@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="74"
+     height="74"
+     viewBox="0 0 64 64"
+     fill="none">
+
+    <defs>
+
+        <linearGradient id="terminalBorder" x1="0" y1="0" x2="64" y2="64">
+            <stop offset="0%" stop-color="#B16EFF"/>
+            <stop offset="100%" stop-color="#7C3AED"/>
+        </linearGradient>
+
+        <linearGradient id="terminalBg" x1="0" y1="0" x2="0" y2="64">
+            <stop offset="0%" stop-color="#1C163A"/>
+            <stop offset="100%" stop-color="#0B0B1F"/>
+        </linearGradient>
+
+        <filter id="glow">
+            <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#A855F7"/>
+        </filter>
+
+    </defs>
+
+    <!-- Window -->
+
+    <rect
+        x="6"
+        y="10"
+        width="52"
+        height="44"
+        rx="8"
+        fill="url(#terminalBg)"
+        stroke="url(#terminalBorder)"
+        stroke-width="2"
+        filter="url(#glow)"
+    />
+
+    <!-- Top Bar -->
+
+    <line
+        x1="6"
+        y1="18"
+        x2="58"
+        y2="18"
+        stroke="#8B5CF6"
+        stroke-width="1.5"
+    />
+
+    <!-- Window Buttons -->
+
+    <circle cx="13" cy="14" r="1.8" fill="#EC4899"/>
+    <circle cx="18" cy="14" r="1.8" fill="#F59E0B"/>
+    <circle cx="23" cy="14" r="1.8" fill="#22C55E"/>
+
+    <!-- Prompt -->
+
+    <polyline
+        points="20 28 27 34 20 40"
+        stroke="#A855F7"
+        stroke-width="2.8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    />
+
+    <!-- Cursor -->
+
+    <line
+        x1="31"
+        y1="40"
+        x2="43"
+        y2="40"
+        stroke="#A855F7"
+        stroke-width="2.8"
+        stroke-linecap="round"
+    />
+
+</svg>
