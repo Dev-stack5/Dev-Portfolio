@@ -29,7 +29,7 @@ function App() {
 
       await submittoFormspree(data);
 
-      console.log("Form submitted");
+    
 
       setTimeout(() => {
         reset();
@@ -68,7 +68,7 @@ function App() {
         emailError.textContent = "Please enter a valid email address.";
       } else {
         emailError.textContent = "✓ Valid email format";
-        emailError.style.color = "#a855f7";
+        emailError.style.color = "#c9a45c";
       }
     };
 
@@ -120,7 +120,7 @@ function App() {
         {/* ===== SECTION 1: HOME/HERO ===== */}
         <section className="mainSection" id="home">
           <div className="leftSection">
-            Hi,My name is <span className="purple">Dev</span>
+            Hi,My name is <span className="accent">Dev</span>
             <div>and I am a passionate</div>
             <span id="element"></span>
           </div>
@@ -141,7 +141,7 @@ function App() {
 
           <div className="CodingJourney">
             <h1>
-              My Coding <span className="purple">Journey</span>
+              My Coding <span className="accent">Journey</span>
             </h1>
 
             <p className="gray">
@@ -296,7 +296,7 @@ function App() {
         {/* ===== SECTION 3: PROJECTS ===== */}
         <section className="projectsec" id="projects">
           <h1>
-            My <span className="purple">Project</span>
+            My <span className="accent">Project</span>
           </h1>
 
           <p className="gray">Real Projects. Real learning. Real Progress</p>
@@ -387,7 +387,7 @@ function App() {
 
             <div className="about">
               <h1>
-                About <span className="purple">Me</span>
+                About <span className="accent">Me</span>
               </h1>
 
               <p className="gray">
@@ -433,45 +433,45 @@ function App() {
             <div className="creativity">
               <div className="skill">
                 <div className="skill-img">
-                  <img src="/Images/backend.svg" alt="Learning icon" />
+                  <img src="/Images/terminal.svg" alt="Web developer icon" />
                 </div>
 
                 <div className="skill-text">
-                  <h2>Passionate Learner</h2>
+                  <h2>Web Developer</h2>
 
                   <p>
-                    I love learning new technologies and exploring creative
-                    ideas.
+                    Building responsive websites and web apps with HTML, CSS,
+                    JavaScript and React.
                   </p>
                 </div>
               </div>
 
               <div className="skill">
                 <div className="skill-img">
-                  <img src="/Images/internet.svg" alt="Creativity icon" />
+                  <img src="/Images/artplate.svg" alt="UI design icon" />
                 </div>
 
                 <div className="skill-text">
-                  <h2>Future Focused</h2>
+                  <h2>UI Design Sense</h2>
 
                   <p>
-                    I'm focused on becoming a full-stack developer and staying
-                    ahead of industry trends.
+                    Turning ideas into clean, balanced layouts with thoughtful
+                    colors and typography.
                   </p>
                 </div>
               </div>
 
               <div className="skill">
                 <div className="skill-img">
-                  <img src="/Images/project.svg" alt="Project icon" />
+                  <img src="/Images/project.svg" alt="Clean code icon" />
                 </div>
 
                 <div className="skill-text">
-                  <h2>Problem Solver</h2>
+                  <h2>Clean Code</h2>
 
                   <p>
-                    I enjoy solving problems and building solutions through
-                    code.
+                    Writing readable, well-organized code that is easy to
+                    maintain and grow.
                   </p>
                 </div>
               </div>
@@ -499,7 +499,7 @@ function App() {
 
               {/* Quick Links */}
               <div className="quicklinks">
-                <h2 className="purple">Quick Links</h2>
+                <h2 className="accent">Quick Links</h2>
 
                 <ul>
                   <li>
@@ -532,7 +532,7 @@ function App() {
 
               {/* Social Links */}
               <div className="FollowMe">
-                <h2 className="purple">Follow Me</h2>
+                <h2 className="accent">Follow Me</h2>
 
                 <a
                   href="https://instagram.com/only._x_dev"
@@ -578,7 +578,7 @@ function App() {
           </div>
 
           <h2>
-            Our <span className="purple">Services</span>
+            Our <span className="accent">Services</span>
           </h2>
 
           <p className="gray">
@@ -851,7 +851,7 @@ function App() {
 
               <div className="footer-brand-text">
                 <h3>
-                  Dev <span className="purple">Kumar</span>
+                  Dev <span className="accent">Kumar</span>
                 </h3>
 
                 <p>Web Developer</p>
