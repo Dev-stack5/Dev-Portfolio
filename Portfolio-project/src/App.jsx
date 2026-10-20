@@ -978,7 +978,7 @@ function App() {
 
               <div className="contact-item">
                 <span className="contact-icon">📱</span>
-                <p>+91 70173 12885</p>
+                <p>+91 7817915902</p>
               </div>
 
               <div className="contact-item">
