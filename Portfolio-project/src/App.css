@@ -2036,7 +2036,18 @@ footer::before {
    RESPONSIVE - SMALL MOBILE (480px)
 =================================================== */
 
+/* ===================================================
+   RESPONSIVE - SMALL MOBILE (480px)
+=================================================== */
+
 @media (max-width: 480px) {
+  /* FIX: side overflow rokne ke liye */
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   .left {
     font-size: 1.2rem;
   }
@@ -2051,6 +2062,13 @@ footer::before {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
+
+  /* FIX: card 300px fixed thi, chhoti screen par overflow karti thi */
+  .card-sec {
+    width: 100%;
+    max-width: 300px;
+  }
+
   .future-title {
     font-size: 28px;
   }
@@ -2058,32 +2076,80 @@ footer::before {
   .future-item {
     font-size: 16px;
   }
-.services{
-width:80vw;
-}
-.secondSection{
-  width:80vw;
-}
-.contact-section{
-  width:95vw;
-}
-#home, #about, #My-Journey, #services, #projects, #contact {
-    margin: auto;
-}
-  .project-info {
-    padding: 15px;
-  }
-  .FollowMe{
-    width:154px;
+
+  /* FIX: pehle 80vw tha, right side me gap aata tha */
+  .services {
+    width: 100%;
+    box-sizing: border-box;
   }
 
+  .secondSection {
+    width: 80vw;
+  }
+  .contact-section {
+    width: 95vw;
+  }
+  #home,
+  #about,
+  #My-Journey,
+  #services,
+  #projects,
+  #contact {
+    margin: auto;
+  }
+  .project-info {
+    width: auto;
+    margin: 10px;
+    padding: 15px;
+  }
+  .services > p {
+    width: auto;
+  }
+  .contact-left h2 {
+    font-size: 40px;
+  }
+  .contact-description {
+    margin-top: 50px;
+    color: #c8c0b1;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  .FollowMe {
+    width: 154px;
+  }
+  .info-card {
+    width: 90vw;
+  }
+  .info-card p {
+    font-size: 13px;
+  }
+  .info-icon {
+    width: 62px;
+    height: 62px;
+  }
+  .label-dot {
+    width: 10px;
+    height: 10px;
+  }
+  .right-panel {
+    width: auto;
+  }
   .aboutinfo-text h2 {
     font-size: 22px;
   }
-  
-
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
   .lastcard .lasttoknow {
     display: none;
+  }
+  .about-sec {
+    width: 90vw;
+  }
+  .secondSection > div:first-child {
+    width: 70vw;
+    font-size: 12px;
   }
   .aboutinfo-img img {
     width: 35px;
@@ -2106,8 +2172,10 @@ width:80vw;
     font-size: 20px;
   }
 
+  /* FIX: pehle width: 92% tha, isse right side me gap aata tha */
   nav {
-    width: 92%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .aboutinfo-img img {
@@ -2138,11 +2206,6 @@ width:80vw;
 
   .secondSection .journeyimg {
     max-width: 100%;
-  }
-
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
   }
 
   .lastsec-about {
